@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laylson Nunes | Criação de Portfólios, Cardápios Digitais e Sites</title>
+<meta name="description" content="Criação de portfólios, cardápios digitais, landing pages e sites simples com banco de dados para pequenos negócios e profissionais. Peça seu orçamento.">
+<meta property="og:title" content="Laylson Nunes | Criação de Portfólios, Cardápios Digitais e Sites">
+<meta property="og:description" content="Sites rápidos, bonitos e prontos para o celular: portfólios, cardápios digitais e sites com banco de dados.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#07070d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.className="js"</script>
+<style>
+:root{--bg:#07070d;--tx:#f2f3fa;--mu:#a3a6bd;--a1:#3b82f6;--a2:#8b5cf6;--card:rgba(255,255,255,.05);--bd:rgba(255,255,255,.11);--g:linear-gradient(120deg,#3b82f6,#8b5cf6);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{font:400 1rem/1.6 Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--tx);overflow-x:hidden;background:radial-gradient(60rem 28rem at 85% -5%,rgba(139,92,246,.28),transparent),radial-gradient(50rem 30rem at -10% 25%,rgba(59,130,246,.2),transparent),#07070d;background-color:var(--bg)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(7,7,13,.9);backdrop-filter:blur(12px);z-index:40}
+a{color:inherit}
+:focus-visible{outline:3px solid #60a5fa;outline-offset:3px;border-radius:6px}
+.w{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:4.5rem 0}
+h1,h2,h3{line-height:1.15}
+h1{font-size:clamp(2.3rem,7.5vw,4.4rem);font-weight:800;letter-spacing:-.025em;max-width:16ch}
+h2{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:700;letter-spacing:-.015em;margin-bottom:.6rem}
+h3{font-size:1.05rem;font-weight:600;margin-bottom:.4rem}
+.sub{color:var(--mu);max-width:58ch;margin-bottom:2rem}
+.gt{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(7,7,13,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;text-decoration:none}
+nav{display:flex;gap:1.4rem}
+nav a{color:var(--mu);text-decoration:none;font-size:.9rem;transition:color .2s}
+nav a:hover{color:var(--tx)}
+#mb{display:none;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:.4rem .9rem;font:inherit;font-size:.9rem;cursor:pointer}
+@media(max-width:860px){#mb{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#0b0b14;padding:1rem 1.5rem;border-bottom:1px solid var(--bd)}nav.open{display:flex}}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font:600 .95rem Poppins,sans-serif;text-decoration:none;border:1px solid var(--bd);color:var(--tx);background:var(--card);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.pri{background:var(--g);border-color:transparent;box-shadow:0 8px 30px rgba(99,102,241,.35)}
+.row{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero{padding:5rem 0 3.5rem}
+.hero p{color:var(--mu);font-size:1.15rem;max-width:52ch;margin:1.2rem 0 1.8rem}
+.chips{margin-top:1.8rem}.chips span,.tags span{font-size:.8rem;color:var(--mu);border:1px solid var(--bd);border-radius:999px;padding:.3rem .85rem;background:var(--card)}
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:1.4rem;backdrop-filter:blur(10px);transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.65)}
+.card .ic{font-size:1.8rem;display:block;margin-bottom:.6rem}
+.card p{color:var(--mu);font-size:.92rem}
+.demo{display:grid;gap:1.1rem;grid-template-columns:1.4fr 1fr;align-items:start}
+@media(max-width:860px){.demo{grid-template-columns:1fr}}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.8rem}
+.tabs button,.add,.clr{font:500 .85rem Poppins,sans-serif;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:999px;padding:.4rem .95rem;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--g);border-color:transparent}
+.it{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.7rem 0;border-bottom:1px solid var(--bd)}
+.it small{color:var(--mu);display:block}
+.ord li{list-style:none;display:flex;justify-content:space-between;font-size:.92rem;padding:.25rem 0}
+.tot{display:flex;justify-content:space-between;font-weight:700;margin:.8rem 0}
+.pri[aria-disabled=true]{opacity:.45;pointer-events:none}
+.note{color:var(--mu);font-size:.8rem;margin-top:.8rem}
+.mk{height:130px;border-radius:12px;margin-bottom:1rem;position:relative;overflow:hidden}
+.mk::before{content:"";position:absolute;inset:12px auto auto 12px;height:10px;width:40%;border-radius:5px;background:rgba(255,255,255,.4)}
+.mk::after{content:"";position:absolute;inset:36px 12px 12px;border-radius:8px;background:rgba(0,0,0,.25)}
+.bd{display:inline-block;font-size:.75rem;color:#c4b5fd;margin-bottom:.4rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.9rem}
+.st{counter-reset:s;display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));list-style:none;padding:0}
+.st li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--g);font-weight:700;margin-bottom:.8rem}
+details{border:1px solid var(--bd);border-radius:14px;background:var(--card);padding:1rem 1.2rem;margin-bottom:.7rem}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--mu);margin-top:.6rem}
+.ct{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+@media(max-width:860px){.ct{grid-template-columns:1fr}}
+form{display:grid;gap:.9rem}
+label{font-size:.88rem;color:var(--mu);display:grid;gap:.35rem}
+input,select,textarea{font:inherit;color:var(--tx);background:rgba(255,255,255,.06);border:1px solid var(--bd);border-radius:12px;padding:.75rem .9rem;width:100%}
+select option{background:#14141f}
+.hp{position:absolute;left:-9999px}
+#fs{min-height:1.4rem;font-size:.92rem}
+footer{padding:2rem 0 5rem;color:var(--mu);font-size:.88rem;border-top:1px solid var(--bd)}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;padding:.8rem 1.2rem;border-radius:999px;background:#22c55e;color:#04210f;font-weight:600;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="logo" href="#topo" data-name>Laylson Nunes</a>
+<button id="mb" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+<nav id="nav" aria-label="Menu principal"><a href="#servicos">Serviços</a><a href="#demo">Veja na prática</a><a href="#projetos">Projetos</a><a href="#como">Como funciona</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a></nav>
+</div></header>
+<main id="topo">
+<section class="hero"><div class="w">
+<h1>Crio sites que transformam <span class="gt">visitantes em clientes.</span></h1>
+<p>Portfólios, cardápios digitais e sites com banco de dados: rápidos, bonitos e prontos para o celular.</p>
+<div class="row"><a class="btn pri wa" href="#contato">Pedir orçamento no WhatsApp</a><a class="btn" href="#projetos">Ver projetos</a></div>
+<div class="chips row"><span>Layout responsivo</span><span>Entrega rápida</span><span>Suporte após a entrega</span></div>
+</div></section>
+
+<section id="servicos"><div class="w">
+<h2>O que eu faço</h2><p class="sub">Soluções simples e profissionais para quem quer aparecer bem na internet e vender mais.</p>
+<div class="grid">
+<article class="card rv"><span class="ic">🎨</span><h3>Portfólios profissionais</h3><p>Mostre seu trabalho com um site elegante que passa confiança e gera contatos.</p></article>
+<article class="card rv"><span class="ic">🍕</span><h3>Cardápios digitais</h3><p>Categorias, fotos, preços e pedido pelo WhatsApp, fáceis de atualizar quando o cardápio mudar.</p></article>
+<article class="card rv"><span class="ic">🗄️</span><h3>Sites com banco de dados</h3><p>Cadastros, painel administrativo, listas e formulários que guardam suas informações com organização.</p></article>
+<article class="card rv"><span class="ic">🚀</span><h3>Landing pages</h3><p>Uma página com um único objetivo: divulgar seu serviço e transformar cliques em conversas.</p></article>
+<article class="card rv"><span class="ic">🛠️</span><h3>Manutenção e melhorias</h3><p>Ajustes, correções e novas funções para o site que você já tem.</p></article>
+</div></div></section>
+
+<section id="demo"><div class="w">
+<h2>Veja na prática</h2><p class="sub">Teste um cardápio digital de exemplo: escolha os itens e envie o pedido pelo WhatsApp.</p>
+<div class="demo">
+<div class="card"><div class="tabs" id="tabs" role="group" aria-label="Categorias do cardápio"></div><div id="menu"></div></div>
+<div class="card"><h3>Seu pedido</h3><ul class="ord" id="ord" style="padding:0"></ul><div class="tot"><span>Total</span><span id="tot">R$ 0,00</span></div>
+<div class="row"><a class="btn pri" id="send" target="_blank" rel="noopener" aria-disabled="true" href="#demo">Enviar pedido pelo WhatsApp</a><button class="clr" id="clr" type="button">Limpar pedido</button></div>
+<p class="note">Itens e preços fictícios, só para demonstração.</p></div>
+</div></div></section>
+
+<section id="projetos"><div class="w">
+<h2>Projetos</h2><p class="sub">Exemplos do tipo de trabalho que posso criar para o seu negócio.</p>
+<div class="grid" id="pj"></div>
+</div></section>
+
+<section id="como"><div class="w">
+<h2>Como funciona</h2><p class="sub">Um processo direto, do primeiro contato até o site no ar.</p>
+<ol class="st">
+<li class="rv"><h3>Conversa</h3><p class="sub" style="margin:0">Entendo sua ideia, seu público e o que você quer alcançar.</p></li>
+<li class="rv"><h3>Proposta</h3><p class="sub" style="margin:0">Você recebe escopo e prazo claros antes de começar.</p></li>
+<li class="rv"><h3>Criação</h3><p class="sub" style="margin:0">Desenvolvo o site e você acompanha e aprova cada etapa.</p></li>
+<li class="rv"><h3>Publicação</h3><p class="sub" style="margin:0">Coloco no ar, configuro o endereço e explico como usar.</p></li>
+</ol></div></section>
+
+<section><div class="w">
+<h2>Por que trabalhar comigo</h2><p class="sub">Cuidado com cada detalhe e conversa sem intermediários.</p>
+<div class="grid">
+<article class="card rv"><h3>Rápido no celular</h3><p>Páginas leves, pensadas primeiro para a tela do celular.</p></article>
+<article class="card rv"><h3>Você edita o conteúdo</h3><p>Estrutura organizada para atualizar textos, fotos e itens com facilidade.</p></article>
+<article class="card rv"><h3>Preço justo e sem surpresas</h3><p>Você sabe o valor combinado antes de começar.</p></article>
+<article class="card rv"><h3>Atendimento direto comigo</h3><p>Você fala direto com quem cria o seu site.</p></article>
+</div></div></section>
+
+<section id="faq"><div class="w">
+<h2>Perguntas frequentes</h2><p class="sub">Respostas rápidas para as dúvidas mais comuns.</p>
+<details><summary>Quanto tempo leva?</summary><p>Depende do tamanho do projeto. Depois da primeira conversa, combinamos um prazo realista por escrito.</p></details>
+<details><summary>Preciso de domínio e hospedagem?</summary><p>Não é obrigatório começar com domínio próprio, pois dá para publicar em hospedagens gratuitas. Se quiser um endereço profissional, ajudo a registrar e configurar.</p></details>
+<details><summary>Posso editar o site depois?</summary><p>Sim. Deixo o conteúdo organizado e explico como alterar textos, fotos e itens. Se preferir, eu mesmo faço as atualizações.</p></details>
+<details><summary>Você faz manutenção depois da entrega?</summary><p>Sim. Ofereço suporte após a entrega e posso fazer ajustes e melhorias sempre que você precisar.</p></details>
+</div></section>
+
+<section id="contato"><div class="w ct">
+<div><h2>Vamos conversar?</h2><p class="sub">Conte o que você precisa e eu respondo com os próximos passos.</p>
+<div class="row"><a class="btn pri wa" target="_blank" rel="noopener" href="#contato">Falar no WhatsApp</a><a class="btn" id="em" href="#contato">Enviar e-mail</a></div>
+<p class="note" data-city>[SUA CIDADE]</p></div>
+<form id="f" class="card">
+<label>Nome<input name="nome" required autocomplete="name" placeholder="Seu nome"></label>
+<label>WhatsApp<input name="whatsapp" type="tel" required autocomplete="tel" placeholder="(00) 00000-0000"></label>
+<label>Tipo de projeto<select name="tipo"><option>Portfólio</option><option>Cardápio digital</option><option>Site com banco de dados</option><option>Outro</option></select></label>
+<label>Mensagem<textarea name="mensagem" rows="4" required placeholder="Conte um pouco sobre o seu projeto"></textarea></label>
+<button class="btn pri" type="submit">Enviar pelo WhatsApp</button>
+<p id="fs" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<footer><div class="w" id="ft">© 2026 Laylson Nunes. Todos os direitos reservados.</div></footer>
+<a class="fab wa" target="_blank" rel="noopener" href="#contato" aria-label="Conversar no WhatsApp">💬 WhatsApp</a>
+<script>
+// Edit your personal data here
+const CONFIG={name:"Laylson Nunes",whatsapp:"5583988765268",email:"laylsonnunes25@gmail.com",city:""};
+// Edit these sample projects and menu items freely
+const PROJECTS=[
+{t:"Cardápio digital para pizzaria",d:"Cardápio por categorias com fotos, preços e pedido direto pelo WhatsApp.",g:["Cardápio","WhatsApp"],h:20},
+{t:"Portfólio de fotógrafa",d:"Galeria elegante com foco nas imagens e botão de contato rápido.",g:["Portfólio","Galeria"],h:280},
+{t:"Sistema de cadastro de clientes",d:"Cadastro, busca e lista de clientes guardados em banco de dados.",g:["Banco de dados","Cadastro"],h:210},
+{t:"Catálogo de produtos",d:"Vitrine online com categorias e contato direto pelo WhatsApp.",g:["Catálogo","Vitrine"],h:150},
+{t:"Landing page para clínica",d:"Página focada em agendamentos, com serviços e formulário de contato.",g:["Landing page","Conversão"],h:330},
+{t:"Painel administrativo",d:"Painel para gerenciar conteúdo, listas e informações do negócio.",g:["Painel","Banco de dados"],h:250}];
+const MENU=[
+{n:"Pizza Margherita",p:42,c:"Pizzas"},{n:"Pizza Calabresa",p:46,c:"Pizzas"},{n:"Pizza Quatro Queijos",p:52,c:"Pizzas"},
+{n:"Refrigerante lata",p:6,c:"Bebidas"},{n:"Suco natural",p:9,c:"Bebidas"},
+{n:"Brownie com sorvete",p:18,c:"Sobremesas"},{n:"Pudim da casa",p:12,c:"Sobremesas"}];
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const digits=CONFIG.whatsapp.replace(/\D/g,"");
+const wa=t=>`https://wa.me/${digits}?text=${encodeURIComponent(t)}`;
+const brl=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+$$("[data-name]").forEach(e=>e.textContent=CONFIG.name);
+$$("[data-city]").forEach(e=>{if(CONFIG.city)e.textContent="📍 "+CONFIG.city;else e.hidden=true});
+$$(".wa").forEach(a=>{a.href=wa("Olá! Vi seu portfólio e gostaria de pedir um orçamento.");a.target="_blank";a.rel="noopener"});
+$("#em").href="mailto:"+CONFIG.email;
+$("#ft").textContent=`© ${new Date().getFullYear()} ${CONFIG.name}. Todos os direitos reservados.`;
+$("#pj").innerHTML=PROJECTS.map(p=>`<article class="card rv"><div class="mk" style="background:linear-gradient(135deg,hsl(${p.h} 80% 55%),hsl(${p.h+50} 80% 38%))"></div><span class="bd">Projeto demonstrativo</span><h3>${p.t}</h3><p>${p.d}</p><div class="tags">${p.g.map(x=>`<span>${x}</span>`).join("")}</div></article>`).join("");
+// Menu demo
+let cat="Todos",cart={};
+const cats=["Todos",...new Set(MENU.map(m=>m.c))];
+function draw(){
+$("#tabs").innerHTML=cats.map(c=>`<button type="button" data-c="${c}" aria-pressed="${c===cat}">${c}</button>`).join("");
+$("#menu").innerHTML=MENU.map((m,i)=>({m,i})).filter(o=>cat==="Todos"||o.m.c===cat).map(o=>`<div class="it"><div>${o.m.n}<small>${brl(o.m.p)}</small></div><button type="button" class="add" data-i="${o.i}" aria-label="Adicionar ${o.m.n}">Adicionar</button></div>`).join("");
+const ks=Object.keys(cart);let tot=0;
+$("#ord").innerHTML=ks.length?ks.map(k=>{const m=MENU[k];tot+=m.p*cart[k];return`<li><span>${cart[k]}x ${m.n}</span><span>${brl(m.p*cart[k])}</span></li>`}).join(""):"<li>Seu pedido está vazio. Adicione itens do cardápio.</li>";
+$("#tot").textContent=brl(tot);
+const s=$("#send");s.setAttribute("aria-disabled",ks.length?"false":"true");
+s.href=ks.length?wa("Olá! Quero fazer um pedido:\n"+ks.map(k=>`${cart[k]}x ${MENU[k].n}`).join("\n")+"\nTotal: "+brl(tot)):"#demo";
+}
+$("#tabs").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;draw()}};
+$("#menu").onclick=e=>{const i=e.target.dataset.i;if(i!==undefined){cart[i]=(cart[i]||0)+1;draw()}};
+$("#clr").onclick=()=>{cart={};draw()};
+draw();
+// Mobile menu
+$("#mb").onclick=()=>{const o=$("#nav").classList.toggle("open");$("#mb").setAttribute("aria-expanded",o)};
+$$("#nav a").forEach(a=>a.onclick=()=>{$("#nav").classList.remove("open");$("#mb").setAttribute("aria-expanded","false")});
+// Contact form: sends the message through WhatsApp (works on any static host)
+$("#f").onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);
+window.open(wa(`Olá! Meu nome é ${d.get("nome")} (${d.get("whatsapp")}).\nProjeto: ${d.get("tipo")}\n${d.get("mensagem")}`),"_blank","noopener");
+$("#fs").textContent="Pronto! Abrindo o WhatsApp para você enviar a mensagem.";e.target.reset()};
+// Scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+$$(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
